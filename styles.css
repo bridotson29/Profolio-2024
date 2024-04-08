@@ -18,7 +18,7 @@
     --white: #ffffff;
    
     font-family: 'Young Serif', serif;
-    text-align: center;
+    text-align: justify;
   }
   
   /*font-family: 'Open Sans', sans-serif; */
@@ -31,10 +31,21 @@
 
 img,
 svg {
-    width: 20px;
+    width: 250px;
+    padding: 20px;
 }
 
 /* BASE STYLES */
+
+body {
+    background-color: var(--body-bg);
+}
+
+main {
+    margin-inline: 1rem;
+    padding: 3rem 1rem;
+    background-color: var(--white);
+}
 
 li{
     list-style: none;
@@ -101,6 +112,29 @@ header {
 
 .mobile-nav a:hover {
     color: var(--secondary)
+}
+
+/* HERO SECTION */
+
+.hero-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.main-img-bg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    rotate: 40deg;
+    background-color: var(--secondary);
+}
+
+.hero-img-container img {
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    background-color: var(--body-bg);
 }
 
 /* MEDIA QUERIES */
